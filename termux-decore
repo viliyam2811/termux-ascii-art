@@ -1,0 +1,39 @@
+#! /system/bin/sh
+
+pkg install ruby -y
+
+gem install lolcat
+
+pkg install figlet -y |lolcat
+
+echo 'command_not_found_handle() {
+	/data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
+}' >> bash.bashrc
+ 
+echo 'Enter Your LOGO Name' |lolcat
+
+read logo
+
+echo "PS1='$logo@termux \$ ' " >> bash.bashrc
+
+echo "figlet $logo |lolcat" >> bash.bashrc
+
+echo 'echo "Script Created by : Viliyam Vasava" |lolcat' >> bash.bashrc
+
+echo "date |lolcat" >> bash.bashrc
+
+rm $PREFIX/etc/bash.bashrc
+rm $PREFIX/etc/motd
+
+mv ~/bash.bashrc $PREFIX/etc/
+
+clear
+
+echo 'Congratulations setup is done...' |lolcat
+
+echo 'Now close termux session and reopen ' |lolcat
+
+echo 'Type exit and press enter' |lolcat
+
+
+
