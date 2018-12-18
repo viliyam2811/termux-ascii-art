@@ -1,4 +1,4 @@
-#! /system/bin/sh
+#/data/data/com.termux/files/usr/bin/bash
 
 pkg install ruby -y
 
@@ -14,18 +14,20 @@ echo 'Enter Your LOGO Name' |lolcat
 
 read logo
 
-echo "PS1='$logo@termux \$ ' " >> bash.bashrc
+echo "PS1='$logo@EasyMux \\$ ' " >> bash.bashrc
 
-echo "figlet $logo |lolcat" >> bash.bashrc
+echo "figlet $logo |lolcat -a" >> bash.bashrc
 
 echo 'echo "Script Created by : Viliyam Vasava" |lolcat' >> bash.bashrc
 
-echo "date |lolcat" >> bash.bashrc
+echo "Type msfconsole to Strat Metasploit-Framework |lolcat" >> bash.bashrc
+echo "Type msfvenom to Generate |lolcat" >> bash.bashrc
+echo "Type easymux to learn more with EAsyMux |lolcat" >> bash.bashrc
 
 rm $PREFIX/etc/bash.bashrc
 rm $PREFIX/etc/motd
 
-mv ~/bash.bashrc $PREFIX/etc/
+mv bash.bashrc $PREFIX/etc/
 
 clear
 
