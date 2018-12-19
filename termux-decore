@@ -25,6 +25,7 @@ echo "Type msfvenom or payload to Generate Payload |lolcat -a" >> bash.bashrc
 echo "Type easymux to learn more with EAsyMux |lolcat -a" >> bash.bashrc
 
 rm $PREFIX/etc/bash.bashrc
+echo "" > $PREFIX/etc/motd
 rm $PREFIX/etc/motd
 
 mv bash.bashrc $PREFIX/etc/
