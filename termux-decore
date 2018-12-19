@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 pkg install ruby -y
-
+echo "Preparing..."
 gem install lolcat
 
 pkg install figlet -y |lolcat
@@ -16,7 +16,7 @@ read logo
 
 echo "PS1='$logo@EasyMux \\$ ' " >> bash.bashrc
 
-echo "figlet $logo |lolcat -a" >> bash.bashrc
+echo "figlet $logo" >> bash.bashrc
 
 echo 'echo "Script Created by : Viliyam Vasava" |lolcat -a' >> bash.bashrc
 
