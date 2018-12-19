@@ -1,5 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+termux-setup-storage
+
 pkg install ruby -y
 echo "Preparing..."
 gem install lolcat
