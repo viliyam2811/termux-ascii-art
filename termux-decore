@@ -16,7 +16,7 @@ read logo
 
 echo "PS1='$logo@EasyMux \\$ ' " >> bash.bashrc
 
-echo "figlet $logo" >> bash.bashrc
+echo "figlet $logo |lolcat" >> bash.bashrc
 
 echo 'echo "Script Created by : Viliyam Vasava" |lolcat -a' >> bash.bashrc
 
