@@ -1,4 +1,4 @@
-#/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 pkg install ruby -y
 
@@ -18,11 +18,11 @@ echo "PS1='$logo@EasyMux \\$ ' " >> bash.bashrc
 
 echo "figlet $logo |lolcat -a" >> bash.bashrc
 
-echo 'echo "Script Created by : Viliyam Vasava" |lolcat' >> bash.bashrc
+echo 'echo "Script Created by : Viliyam Vasava" |lolcat -a' >> bash.bashrc
 
-echo "Type msfconsole to Strat Metasploit-Framework |lolcat" >> bash.bashrc
-echo "Type msfvenom to Generate |lolcat" >> bash.bashrc
-echo "Type easymux to learn more with EAsyMux |lolcat" >> bash.bashrc
+echo "Type msfconsole to Strat Metasploit-Framework |lolcat -a" >> bash.bashrc
+echo "Type msfvenom or payload to Generate Payload |lolcat -a" >> bash.bashrc
+echo "Type easymux to learn more with EAsyMux |lolcat -a" >> bash.bashrc
 
 rm $PREFIX/etc/bash.bashrc
 rm $PREFIX/etc/motd
@@ -31,11 +31,11 @@ mv bash.bashrc $PREFIX/etc/
 
 clear
 
-echo 'Congratulations setup is done...' |lolcat
+echo 'Congratulations setup is done...' |lolcat -a
 
-echo 'Now close termux session and reopen ' |lolcat
+echo 'Now close termux session and reopen ' |lolcat -a
 
-echo 'Type exit and press enter' |lolcat
+echo 'Type exit and press enter' |lolcat -a
 
 
 
