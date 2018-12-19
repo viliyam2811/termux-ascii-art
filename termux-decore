@@ -2,6 +2,8 @@
 
 termux-setup-storage
 
+sleep 3
+
 pkg install ruby -y
 echo "Preparing..."
 gem install lolcat
