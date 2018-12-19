@@ -6,6 +6,8 @@ gem install lolcat
 
 pkg install figlet -y |lolcat
 
+cd ~/
+
 echo 'command_not_found_handle() {
 	/data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
 }' >> bash.bashrc
@@ -23,7 +25,7 @@ echo 'echo "Script Created by : Viliyam Vasava" |lolcat -a' >> bash.bashrc
 [ -d ~/metasploit-framework ] && echo 'echo "Type msfconsole to Strat Metasploit-Framework." |lolcat -a' >> bash.bashrc
 [ -d ~/metasploit-framework ] && echo 'echo "Type msfvenom or payload to Generate Payload." |lolcat -a' >> bash.bashrc
 
-echo 'echo "Type easymux to learn more with EAsyMux." |lolcat -a' >> bash.bashrc
+echo 'echo "Type easymux to learn more with EasyMux." |lolcat -a' >> bash.bashrc
 
 rm $PREFIX/etc/bash.bashrc
 echo "" > $PREFIX/etc/motd
@@ -31,7 +33,8 @@ rm $PREFIX/etc/motd
 
 mv bash.bashrc $PREFIX/etc/
 
-[ -d ~/termux-metasploit-helper ] &&  rm -ef ~/termux-metasploit-helper
+cd ~/
+[ -d ~/termux-metasploit-helper ] && rm -rf ~/termux-metasploit-helper
 
 clear
 
