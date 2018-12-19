@@ -1,7 +1,23 @@
 #/data/data/com.termux/files/usr/bin/bash
 clear
 
-cd $HOME
+chmod +x *
+
+rm README.md
+
+[ -d ~/metasploit-framework ] $$ mv msf* $PREFIX/bin
+[ -d ~/metasploit-framework ] $$ mv payload $PREFIX/bin
+
+mv easymux $PREFIX/bin
+mv termux-decore $PREFIX/bin
+
+cd~/
+
+termux-decore
+
+
+
+
 
 
 
