@@ -36,8 +36,6 @@ mv bash.bashrc $PREFIX/etc/
 cd ~/
 [ -d ~/termux-metasploit-helper ] && rm -rf ~/termux-metasploit-helper
 
-clear
-
 echo 'Congratulations setup is done...' |lolcat -a
 
 echo 'Now close termux session and reopen ' |lolcat -a
