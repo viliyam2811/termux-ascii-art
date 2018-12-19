@@ -1,0 +1,3 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+termux-open-url https://www.youtube.com/channel/UCPZ-jgYuRVZ8Mq9wCn1xepw
