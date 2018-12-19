@@ -1,6 +1,4 @@
-#/data/data/com.termux/files/usr/bin/bash
-clear
-
+#!/data/data/com.termux/files/usr/bin/bash
 chmod +x *
 
 rm README.md
@@ -11,7 +9,7 @@ rm README.md
 mv easymux $PREFIX/bin
 mv termux-decore $PREFIX/bin
 
-cd~/
+cd ~/
 
 termux-decore
 
