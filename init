@@ -8,6 +8,7 @@ rm README.md
 
 mv easymux $PREFIX/bin
 mv termux-decore $PREFIX/bin
+mv fix-nokogiri $PREFIX/bin
 
 cd ~/
 
