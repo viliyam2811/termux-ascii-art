@@ -7,7 +7,7 @@ echo "######################################" |lolcat
 echo 'Android payload generator ' |lolcat
 echo 'Script Created by : Viliyam Vasava' |lolcat -a
 echo ""
-echo 'Get More type  easymux' |lolcat -a
+echo 'Learn More type  easymux' |lolcat -a
 
 echo "######################################" |lolcat
 
