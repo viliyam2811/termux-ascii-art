@@ -3,12 +3,12 @@
 clear
 
 echo "######################################" |lolcat
-
+echo ""
 echo 'Android payload generator ' |lolcat
 echo 'Script Created by : Viliyam Vasava' |lolcat -a
 echo ""
 echo 'Learn More type  easymux' |lolcat -a
-
+echo ""
 echo "######################################" |lolcat
 
 option=0
