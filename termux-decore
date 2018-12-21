@@ -16,7 +16,7 @@ echo 'command_not_found_handle() {
 	/data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
 }' >> bash.bashrc
  
-echo 'Enter Your LOGO Name' |lolcat
+echo 'Enter Your Name : ' |lolcat
 
 read logo
 
@@ -25,11 +25,12 @@ echo "PS1='$logo@EasyMux \\$ ' " >> bash.bashrc
 echo "figlet $logo |lolcat" >> bash.bashrc
 
 echo 'echo "Script Created by : Viliyam Vasava" |lolcat -a' >> bash.bashrc
-
-[ -d ~/metasploit-framework ] && echo 'echo "Type msfconsole to Strat Metasploit-Framework." |lolcat -a' >> bash.bashrc
-[ -d ~/metasploit-framework ] && echo 'echo "Type msfvenom or payload to Generate Payload." |lolcat -a' >> bash.bashrc
-
-echo 'echo "Type easymux to learn more with EasyMux." |lolcat -a' >> bash.bashrc
+echo 'echo ""' >> bash.bashrc
+[ -d ~/metasploit-framework ] && echo 'echo "To strat Metasploit type		msfconsole."' >> bash.bashrc
+[ -d ~/metasploit-framework ] && echo 'echo "To create Payload type`		msfvenom or payload."' >> bash.bashrc
+[ -d ~/metasploit-framework ] && echo 'echo "If problem with nokogiri type	fix-nokogiri."' >> bash.bashrc
+echo 'echo ""' >> bash.bashrc
+echo 'echo "Subscribe my channel & learn more type	easymux." |lolcat -a' >> bash.bashrc
 
 rm $PREFIX/etc/bash.bashrc
 echo "" > $PREFIX/etc/motd
