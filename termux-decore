@@ -27,12 +27,12 @@ echo "figlet $logo |lolcat" >> bash.bashrc
 echo 'echo "Script Created by : Viliyam Vasava" |lolcat -a' >> bash.bashrc
 echo 'echo ""' >> bash.bashrc
 echo 'echo "COMMANDS		: DESCRIPTIONS"' >> bash.bashrc
-[ -d ~/metasploit-framework ] && echo 'echo "msfconsole		: Start Metasploit."' >> bash.bashrc
-[ -d ~/metasploit-framework ] && echo 'echo "msfvenom		: Create Payload."' >> bash.bashrcc
-[ -d ~/metasploit-framework ] && echo 'echo "payload		: Create Payload."' >> bash.bashrcc
-[ -d ~/metasploit-framework ] && echo 'echo "fix-nokogiri	: Fix nokogiri error if encountered."' >> bash.bashrc
+[ -d ~/metasploit-framework ] && echo 'echo "msfconsole		: Start Metasploit." |lolcat' >> bash.bashrc
+[ -d ~/metasploit-framework ] && echo 'echo "msfvenom		: Create Payload." |lolcat' >> bash.bashrcc
+[ -d ~/metasploit-framework ] && echo 'echo "payload		: Create Payload." |lolcat' >> bash.bashrcc
+[ -d ~/metasploit-framework ] && echo 'echo "fix-nokogiri	: Fix nokogiri error if encountered." |lolcat' >> bash.bashrc
 echo 'echo ""' >> bash.bashrc
-echo 'echo "easymux		: Learn more on my YouTube Channel and please subscribe."' >> bash.bashrc
+echo 'echo "easymux		: Learn more on my YouTube Channel and please subscribe." |lolcat -a' >> bash.bashrc
 
 
 rm $PREFIX/etc/bash.bashrc
