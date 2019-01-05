@@ -14,7 +14,7 @@ echo "echo 'Script Created By : Viliyam Vasava'" >> bash.bashrc
 echo "echo ''" >> bash.bashrc
 
 echo "echo '  COMMANDS	: DESCRIPTION'" >> bash.bashrc
-echo "echo '  ============================='" >> bash.bashrc
+echo "echo '  =============================' |lolcat -a" >> bash.bashrc
 
 [ -d ~/metasploit-framework ] && echo "echo '  msfconsole	: Start metasploit-Framework'" >> bash.bashrc
 [ -d ~/metasploit-framework ] && echo "echo '  msfvenom	: Create Android Payload'" >> bash.bashrc
@@ -23,7 +23,7 @@ echo "echo '  ============================='" >> bash.bashrc
 
 echo "echo ''" >> bash.bashrc
 echo "echo '  ascii-art	: Change ASCII Text ART'" >> bash.bashrc
-echo "echo '  easymux	: Learn more with EasyMux on Youtube' |lolcat" >> bash.bashrc
+echo "echo '  easymux	: Learn more with EasyMux on Youtube'" >> bash.bashrc
 
 echo "PS1='[$logo@EasyMux][\\#]\\n\\$ ' " >> bash.bashrc
 
