@@ -11,7 +11,6 @@ read logo
 echo "figlet $logo |lolcat" >> bash.bashrc
 
 echo "echo 'Script Created By : Viliyam Vasava'" >> bash.bashrc
-echo "echo ''" >> bash.bashrc
 
 echo "echo '  COMMANDS	: DESCRIPTION'" >> bash.bashrc
 echo "echo '  =============================' |lolcat -a" >> bash.bashrc
@@ -21,11 +20,12 @@ echo "echo '  =============================' |lolcat -a" >> bash.bashrc
 [ -d ~/metasploit-framework ] && echo "echo '  paylaod	: Create Android Payload'" >> bash.bashrc
 [ -d ~/metasploit-framework ] && echo "echo '  fix-ng	: Fix nokogiri Error if accured'" >> bash.bashrc
 
-echo "echo ''" >> bash.bashrc
 echo "echo '  ascii-art	: Change ASCII Text ART'" >> bash.bashrc
 echo "echo '  easymux	: Learn more with EasyMux on Youtube'" >> bash.bashrc
 
-echo "PS1='[$logo@EasyMux][\\#]\\n\\$ ' " >> bash.bashrc
+echo "echo '  =============================' |lolcat -a" >> bash.bashrc
+
+echo "PS1='[\\T][\\W][\\#]\\n[$logo@EasyMux]\\$ ' " >> bash.bashrc
 
 
 rm $PREFIX/etc/bash.bashrc
