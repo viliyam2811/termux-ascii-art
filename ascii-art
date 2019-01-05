@@ -25,7 +25,7 @@ echo "echo '  easymux	: Learn more with EasyMux on Youtube'" >> bash.bashrc
 
 echo "echo '  =============================' |lolcat -a" >> bash.bashrc
 
-echo "PS1='┌─[\\@][\\W][\\#]\\n|\\n└─[$logo@EasyMux]\\$ ' " >> bash.bashrc
+echo "PS1='\e[34m┌─[\\@][\\W][\\#]\\n|\\n└─[$logo@EasyMux]\\$ \e[30m' " >> bash.bashrc
 
 
 rm $PREFIX/etc/bash.bashrc
