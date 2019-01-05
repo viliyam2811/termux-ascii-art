@@ -1,0 +1,46 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+cd ~/
+
+echo 'command_not_found_handle() {
+	/data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
+}' >> bash.bashrc
+ 
+echo 'Enter Name for ASCII TEXT ART : ' |lolcat
+read logo
+echo "figlet $logo |lolcat" >> bash.bashrc
+
+echo "echo 'Script Created By : Viliyam Vasava'" >> bash.bashrc
+echo "echo ''" >> bash.bashrc
+
+echo "echo 'COMMANDS	: DESCRIPTION'" >> bash.bashrc
+echo "echo '============================='" >> bash.bashrc
+
+[ -d ~/metasploit-framework ] && echo "echo 'msfconsole	: Start metasploit-Framework' |lolcat" >> bash.bashrc
+[ -d ~/metasploit-framework ] && echo "echo 'msfvenom	: Create Android Payload' |lolcat" >> bash.bashrc
+[ -d ~/metasploit-framework ] && echo "echo 'paylaod	: Create Android Payload' |lolcat" >> bash.bashrc
+[ -d ~/metasploit-framework ] && echo "echo 'fix-ng	: Fix nokogiri Error if accured' |lolcat" >> bash.bashrc
+
+echo "echo ''" >> bash.bashrc
+echo "echo 'ascii-art	: Change ASCII Text ART' |lolcat" >> bash.bashrc
+echo "echo 'easymux	: Learn more with EasyMux on Youtube' |lolcat" >> bash.bashrc
+
+echo "PS1='[$logo@EasyMux][\\#]\\n\\$ ' " >> bash.bashrc
+
+
+rm $PREFIX/etc/bash.bashrc
+echo "" > $PREFIX/etc/motd
+rm $PREFIX/etc/motd
+
+mv bash.bashrc $PREFIX/etc/
+
+cd ~/
+[ -d ~/termux-metasploit-helper ] && rm -rf ~/termux-metasploit-helper
+
+echo 'Congratulations setup is done...' |lolcat -a
+
+echo 'Open New Session' |lolcat -a
+
+
+
+
