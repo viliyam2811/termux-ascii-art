@@ -15,8 +15,8 @@ rm README.md
 [ -d ~/metasploit-framework ] && mv payload $PREFIX/bin
 
 mv easymux $PREFIX/bin
-mv termux-decore $PREFIX/bin
-mv fix-nokogiri $PREFIX/bin
+mv ascii-art $PREFIX/bin
+mv fix-ng $PREFIX/bin
 
 cd ~/
 
