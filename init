@@ -20,7 +20,7 @@ mv fix-ng $PREFIX/bin
 
 cd ~/
 
-termux-decore
+ascii-art
 
 
 
