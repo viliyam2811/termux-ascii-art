@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 termux-setup-storage
+mkdir /sdcard/Metasploit
 
 pkg install ruby -y
 echo "Preparing..."
